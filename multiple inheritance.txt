@@ -1,0 +1,39 @@
+class A{
+    A(){
+        super();
+    }
+    public void a() {
+        System.out.println("Call from A");
+    }
+}
+class B extends A {
+    int a;
+    B(){
+        super();
+        this.a=5;
+    }
+    public void b() {
+        super.a();
+        System.out.println("Call from B");
+    }
+    public void m() {
+        this.b();
+
+        System.out.println("Call from B");
+    }
+}
+class C extends B{
+    C(){
+        super();
+    }
+    public void c() {
+        super.a();
+        System.out.println("Call from C");
+    }
+}
+public class Main{
+ public static void main(String[] args){
+     C c =new C();
+     c.c();
+  }
+}

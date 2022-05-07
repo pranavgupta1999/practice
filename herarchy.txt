@@ -1,0 +1,28 @@
+class P {
+    public static Logger logger = Logger.getLogger(P.class);
+
+    public void p() {
+        logger.info("call from p");
+    }
+  }
+class C1 extends P {
+    public void c1() {
+        logger.info("call from c1");
+    }
+  }
+class C2 extends P {
+
+     C2(){
+        super();
+     }
+    public void c2() {
+     logger.info("call from c2");
+    }
+}
+public class Herarchical  {
+    public static void main(String[] args) {
+        BasicConfigurator.configure();
+        C2 c2=new C2();
+        c2.c2();
+    }
+}
