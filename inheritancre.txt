@@ -1,0 +1,18 @@
+Inhertance:
+-----------
+1)Single
+2)Multi-level
+3)herichical
+4)multiple - not applicable in java
+
+
+Execution
+super() (Calling the parent class constructor).
+super.  (Calling parent class methods)
+extends (In order to have relation with another class).
+method Overriding 
+  - Method signature should be same.
+  - Follow the inheritance(parent and Child).
+Multiple 
+  - Cons chaning (Super() grt confused to call which parent)
+  - Diamond shape problem.( calling tha same methos which are in both the pa
